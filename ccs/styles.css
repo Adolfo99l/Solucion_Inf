@@ -1,0 +1,328 @@
+/* Paleta de colores
+#29075c morado
+#f9f7fa
+#9c18dd
+#bc057f
+#470a94 */
+
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: linear-gradient(-45deg, #9c18dd, #bc057f, #f9f7fa);
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    color: transparent;
+    animation: wave 10s ease infinite;
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Estilos del menú de navegación */
+header {
+    background-color: #29075c;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu li a {
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    color: #fff;
+}
+
+.menu li a:hover {
+    background-color: #29075c;
+    color: #bc057f;
+}
+
+/* Estilos del ícono de menú */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon i {
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+.menu-icon i:hover {
+    transform: scale(1.2);
+}
+
+/* Media queries para el menú responsive */
+@media screen and (max-width: 768px) {
+    header {
+        background-color: #29075c;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon i {
+        font-size: 24px;
+        color: #f9f7fa;
+    }
+
+    .menu-icon.active~.menu {
+        display: block;
+        background-color: #29075c;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 9999; /* Agrega este estilo para dar un z-index alto al menú desplegable */
+    }
+
+    .menu li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu li a {
+        color: #fff;
+        padding: 10px 20px;
+        margin-top: 10px;
+        background: linear-gradient(#bc057f, #29075c);
+        border-radius: 30px;
+        display: inline-block;
+        transition: background-color 0.2s ease;
+    }
+
+    .menu li a:hover {
+        background-color: #29075c;
+        color: #fff;
+    }
+}
+
+
+
+/* seccion carrousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel img:first-child {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        height: 300px;
+    }
+}
+
+
+/* seccion productos destacados */
+
+
+/* Estilos para la sección de productos destacados */
+
+section {
+    padding: 50px;
+    
+}
+ h2{
+    color: #fff;
+    text-align: center;
+ }
+
+.productos-destacados {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.producto {
+    width: 23%;
+    background-color: #9c18dd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 50px;
+    margin-bottom: 30px;
+}
+
+.producto img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.producto p {
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.boton-comprar {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.boton-comprar:hover {
+    background-color: #0062cc;
+}
+
+
+
+
+
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  h4 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  ul.social-icons {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  ul.social-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  ul.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #666;
+    transition: all 0.3s ease;
+  }
+  
+  ul.social-icons a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .bottom-bar {
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .bottom-bar p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .bottom-bar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .bottom-bar a:hover {
+    text-decoration: underline;
+  }
+  
