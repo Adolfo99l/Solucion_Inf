@@ -1,52 +1,189 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-	<title>Mi Tienda de Informática</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="ccs/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Laptops</title>
+    <!-- Importa la fuente de Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap">
+    <!-- Importa la biblioteca de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Importa el archivo de estilos personalizado -->
+    <link rel="stylesheet" href="ccs/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-	<div class="contenedor">
-		<img src="Img/My project-1.png" alt="">
-		<h1>Solución informática Chile</h1>
-	</div>
-	<button id="toggle-theme">Cambiar Tema</button>
-	</header>
+    <!-- Crea la barra de navegación -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="Img/My project-1.png" alt="Logo de la tienda de laptops">
+                </a>
+            </div>
+            <div class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul class="menu">
+                <li><a href="#inicio" class="scroll-link">Inicio</a></li>
+                <li><a href="#laptops" class="scroll-link">Laptops</a></li>
+                <li><a href="#accesorios" class="scroll-link">Accesorios</a></li>
+                <li><a href="#servicios" class="scroll-link">Servicios</a></li>
+                <li><a href="#contacto" class="scroll-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-	<nav>
-		<ul>
-			<li><a href="index.html">Inicio</a></li>
-			<li><a href="#">Productos</a>
-				<ul>
-					<li><a href="aours 15p.html">Laptops</a></li>
-					<li><a href="#">Desktops</a></li>
-					<li><a href="#">Tablets</a></li>
-					<li><a href="#">Accesorios</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Contacto</a></li>
-			<li><a href="#">Soporte</a></li>
-			<li><a href="carrito.html">Carrito <span id="cantidad-carrito">0</span></a></li>
-		</ul>
-	</nav>
 
-	<main>
-		<div class="slider">
-			<div class="slide slide1"></div>
-			<div class="slide slide2"></div>
-			<div class="slide slide3"></div>
-		  </div>
-		  
-	</main>
+    <main>
+<!-- Crea el carrusel de imágenes -->
+<div class="carousel">
+  <button class="carousel-btn prev-btn">&#8249;</button>
+  <a href="https://www.lenovo.com/"><img src="Img/Productos/Notebooks/Banners/11.png" alt="Banner 1" class="carousel-img"></a>
+  <a href="https://www.lenovo.com/"><img src="Img/Productos/Notebooks/Banners/12.png" alt="Banner 2" class="carousel-img"></a>
 
-	<footer>
-		<p>Derechos de autor © 2023 | Todos los derechos reservados</p>
-	</footer>
+  <button class="carousel-btn next-btn">&#8250;</button>
+</div>
 
-	<script src="JS/script_general.js"></script>
+
+
+    <section>
+    <h2>Novedades </h2>
+    <div class="productos-destacados">
+        <div class="producto">
+            <img src="Img/Productos/Notebooks/Notebook Gamer Aorus 15P/1.png" alt="Laptop 1">
+            <h3>Notebook Gamer Aorus 15P</h3>
+            <p>Descripción del producto.</p>
+            <a href="aorus 15p xd.html" class="boton-comprar">Ver detalles</a>
+        </div>
+        <div class="producto">
+            <img src="Img/Productos/Notebooks/Notebook Gamer OMEN 16-C0506LA/1.png" alt="Laptop 2">
+            <h3>Notebook Gamer OMEN 16-C0506LA</h3>
+            <p>Descripción del producto.</p>
+            <a href="hp omen.html" class="boton-comprar">Comprar</a>
+        </div>
+        <div class="producto">
+            <img src="Img/Productos/Notebooks/Notebook Gamer Aorus 15P/4.png" alt="Laptop 3">
+            <h3>Laptop 3</h3>
+            <p>Descripción del producto.</p>
+            <a href="#" class="boton-comprar">Comprar</a>
+        </div>
+
+        
+    </div>
+
+  </section>
+
+
+
+
+
+  <section>
+    <h2>Productos destacados</h2>
+    <div class="productos-destacados">
+        <div class="producto">
+            <img src="Img/Productos/Notebooks/Notebook Gamer Aorus 15P/1.png" alt="Laptop 1">
+            <h3>Laptop 1</h3>
+            <p>Descripción del producto.</p>
+            <a href="#" class="boton-comprar">Comprar</a>
+        </div>
+        <div class="producto">
+            <img src="Img/Productos/Notebooks/Notebook Gamer Aorus 15P/2.png" alt="Laptop 2">
+            <h3>Laptop 2</h3>
+            <p>Descripción del producto.</p>
+            <a href="#" class="boton-comprar">Comprar</a>
+        </div>
+        <div class="producto">
+            <img src="Img/Productos/Notebooks/Notebook Gamer Aorus 15P/4.png" alt="Laptop 3">
+            <h3>Laptop 3</h3>
+            <p>Descripción del producto.</p>
+            <a href="#" class="boton-comprar">Comprar</a>
+        </div>
+
+        <div class="producto">
+          <img src="Img/Productos/Notebooks/Notebook Gamer Aorus 15P/4.png" alt="Laptop 3">
+          <h3>Laptop 3</h3>
+          <p>Descripción del producto.</p>
+          <a href="#" class="boton-comprar">Comprar</a>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+</main>
+
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-links">
+      <h3>Explorar</h3>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Soporte</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="footer-info">
+      <h3>Tienda de Laptops</h3>
+      <p>Somos una tienda especializada en la venta de laptops de última generación y accesorios relacionados. </p>
+    </div>
+    
+    <div class="footer-social">
+      <h3>Síguenos en las redes sociales</h3>
+      <nav>
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <div class="footer-info">
+      <p><i class="fas fa-map-marker-alt"></i> Dirección: 123 Calle Falsa</p>
+      <p><i class="fas fa-phone-alt"></i> Teléfono: 555-1234</p>
+      <p><i class="fas fa-envelope"></i> Correo electrónico: info@tiendadelaptops.com</p>
+    </div>
+    
+    <div class="footer-payment">
+      <h3>Aceptamos los siguientes métodos de pago</h3>
+      <nav>
+        <ul>
+          <li><i class="fab fa-cc-visa"></i></li>
+          <li><i class="fab fa-cc-mastercard"></i></li>
+          <li><i class="fab fa-cc-amex"></i></li>
+          <li><i class="fab fa-cc-paypal"></i></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script src="JS/responsive_nav.js"></script>
+    <script src="JS/carrousel.js"></script>
+
+
 </body>
 
 </html>
