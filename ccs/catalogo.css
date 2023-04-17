@@ -1,11 +1,3 @@
-/* Paleta de colores
-#29075c morado
-#f9f7fa
-#9c18dd
-#bc057f
-#470a94 */
-
-
 /* Estilos generales */
 * {
     margin: 0;
@@ -157,142 +149,99 @@ nav {
 
 
 
-/* seccion carrousel */
-.carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .carousel-img {
-    width: 100%;
-    display: none;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .carousel-img.active {
-    display: block;
-    opacity: 1;
-  }
-  
-  .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background: transparent;
-    border: none;
-    font-size: 30px;
-    color: #fff;
-    transition: opacity 0.9s ease-in-out;
-    opacity: 0.5;
-  }
-  
-  .carousel-btn:hover {
-    opacity: 1;
-  }
-  
-  .prev-btn {
-    left: 10px;
-  }
-  
-  .next-btn {
-    right: 10px;
-  }
-  
-  @media (max-width: 768px) {
-    .carousel-btn {
-      font-size: 20px;
-      width: 30px;
-      height: 30px;
-    }
-    .carousel-img {
-        width: 100%;
-        height: 100%;
-        }
-        
-        .carousel {
-        max-width: 100%;
-        height: apx;
-        }
-  }
-
-/* Estilos para la sección de productos destacados */
-section {
-    padding: 50px;
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
-h2 {
-    color: #fff;
-    text-align: center;
-}
-
-.productos-destacados {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-    justify-items: center;
-    margin-top: 30px;
-}
-
-.producto {
-    position: relative;
-    width: 100%;
-    max-width: 400px;
-    background-color: #9c18dd;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px auto;
-    margin-bottom: 20px;
-    transition: all 0.3s ease-in-out;
-}
-
-.producto:hover {
-    transform: scale(1.1);
-    z-index: 1;
-}
-
-.producto img {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.producto h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #fff;
-    text-align: center;
-}
-
-.producto p {
-    margin-bottom: 20px;
-    color: #fff;
-    text-align: center;
-}
-
-.boton-comprar {
-    display: block;
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+.product {
+    background-color: #fff;
     border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    padding: 30px;
+    width: 30%;
+}
+
+.product img {
+    display: block;
+    height: 250px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.product h2 {
+    font-size: 28px;
+    margin: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+.product p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.product .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.product .button {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 15px 20px;
+    text-align: center;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.boton-comprar:hover {
-    background-color: #0062cc;
+.product .button:hover {
+    background-color: #555;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-@media (min-width: 768px) {
-    .producto {
-        width: 48%;
-        margin: 20px;
+/* Responsividad para móvil */
+@media (max-width: 767px) {
+    .products {
+        margin: 10px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .product img {
+        height: auto;
+        max-width: 100%;
     }
 }
-
 
 
 
